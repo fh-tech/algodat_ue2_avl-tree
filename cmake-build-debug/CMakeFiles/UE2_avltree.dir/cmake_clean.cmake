@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/UE2_avltree.dir/main.cpp.o"
+  "CMakeFiles/UE2_avltree.dir/Tree.cpp.o"
   "UE2_avltree.pdb"
   "UE2_avltree"
 )

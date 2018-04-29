@@ -6,10 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/vik/Repos/ue2_avltree/Tree.cpp
+
 /home/vik/Repos/ue2_avltree/Tree.h
-memory
--
 functional
+-
+iostream
 -
 
 /home/vik/Repos/ue2_avltree/main.cpp
@@ -19,4 +21,6 @@ iomanip
 -
 Tree.h
 /home/vik/Repos/ue2_avltree/Tree.h
+sstream
+-
 

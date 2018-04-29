@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/UE2_avltree.dir/main.cpp.o  -o UE2_avltree 
+/usr/bin/c++  -g   CMakeFiles/UE2_avltree.dir/main.cpp.o CMakeFiles/UE2_avltree.dir/Tree.cpp.o  -o UE2_avltree 

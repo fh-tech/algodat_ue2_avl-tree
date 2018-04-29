@@ -1,14 +1,18 @@
 #include <iostream>
 #include <iomanip>
 #include "Tree.h"
+#include <sstream>
 
 int main() {
-
     Tree<int> t{};
-    t.add(10);
-    t.add(11);
-    t.add(9);
-    t.add(8);
+
+    std::string input;
+    while(std::getline(std::cin, input)) {
+        std::stringstream ss(input);
+        int val;
+        ss >> val;
+        t.add(val);
+    }
     t.printPreOrder();
     t.printPostOrder();
     t.printInOrder();
