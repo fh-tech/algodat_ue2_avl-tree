@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vik/Repos/ue2_avltree/Tree.h
+memory
+-
+functional
+-
+
+/home/vik/Repos/ue2_avltree/main.cpp
+iostream
+-
+iomanip
+-
+Tree.h
+/home/vik/Repos/ue2_avltree/Tree.h
+

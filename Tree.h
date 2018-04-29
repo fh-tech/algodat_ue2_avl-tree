@@ -1,5 +1,5 @@
 //
-// Created by daniel on 15.04.18.
+// Created by viktor on 29.04.18.
 //
 
 #ifndef UE2_AVLTREE_TREE_H
@@ -7,122 +7,120 @@
 
 #include <memory>
 #include <functional>
-#include <cassert>
 
-struct node_visiter;
-
-struct node {
-    std::unique_ptr<node> left{};
-    std::unique_ptr<node> right{};
-    std::unique_ptr<int>  val{};
-
-    node() = default;
-
-    int height(){
-        if(!left && !right){
-            return val? 1 : 0;
-        }else{
-            return 1 + std::max( left  ? left ->height(): 0
-                           , right ? right->height(): 0);
-        }
-    }
-
-    void add(int newval){
-        std::unique_ptr<node>* direction = nullptr;
-
-        if(!val) this->val = std::make_unique<int>(newval);
-
-        else {
-            if(newval == *val) return;
-
-            if(newval < *val) direction = &left;
-            if(newval > *val) direction = &right;
-            if(!(*direction)){
-                (*direction) = std::make_unique<node>();
-            }
-            (*direction)->add(newval);
-        }
-    }
-
-    int balance() {
-        return   (left  ? left ->height() : 0)
-               - (right ? right->height() : 0);
-    }
-};
-
-class Tree {
-private:
-    std::unique_ptr<node> root = std::make_unique<node>();
+template<typename T>
+class Node {
 public:
+    Node<T>* left = nullptr;
+    Node<T>* right = nullptr;
+    T value{};
 
-    Tree()= default;
-
-    void add(int i){
-        root->add(i);
+    Node(T value) {
+        this->value = value;
     }
 
-    int get_height(){
-        return root->height();
+    ~Node() {
+        delete left;
+        delete right;
+    }
+};
+
+
+template<typename T>
+class Tree {
+public:
+    Node<T>* root = nullptr;
+    size_t size{};
+
+    void add(T val) {
+        root = addRecursive(root, val);
     }
 
-    int get_balance(){
-        return root->balance();
+    void printPreOrder() {
+        size_t j = size;
+        TraversePreOrder(root, [&j](Node<T>* current) mutable{
+            std::cout << current->value;
+            if(--j > 0) std::cout << "->";
+        });
+        std::cout << "\n";
     }
 
-    template <typename T>
-    T acc(std::function<T (node*)> fn) {
-        assert(this->root);
-        return rec_fold(fn, this->root.get());
+    void printPostOrder() {
+        size_t j = size;
+        TraversePostOrder(root, [&j](Node<T>* current) mutable{
+            std::cout << current->value;
+            if(--j > 0) std::cout << "->";
+        });
+        std::cout << "\n";
     }
+
+    // closure with size of tree
+    void printInOrder() {
+        size_t j = size;
+        TraverseInOrder(root, [&j](Node<T>* current) mutable{
+            std::cout << current->value;
+            if(--j > 0) std::cout << "->";
+        });
+        std::cout << "\n";
+    }
+
+
+
+    Tree() {
+        root = nullptr;
+        size = 0;
+    }
+//    ~Tree() {
+//        TraverseInOrder(root, [](Node<T>* current) -> void {delete current;});
+//    }
 
 private:
-    template <typename T>
-    T rec_fold(const std::function<T (node*)> &fn, node* tree){
-        auto t = T{};
-        if(tree) {
-            if (tree->left) {
-                t = t + rec_fold(fn, tree->left.get());
-            }
-            if (tree->val) {
-                t = t + fn(tree);
-            }
-            if (tree->right) {
-                t = t + rec_fold(fn, tree->right.get());
-            }
+    Node<T>* addRecursive(Node<T>* current, int val) {
+        if(!current) {
+            return new Node(val);
+        } else if(val > current->value) {
+            current->right = addRecursive(current->right, val);
+        } else if(val < current->value) {
+            current->left = addRecursive(current->left, val);
+        } else {
+            //value already exists
+            return current;
         }
-        return t;
+        size++;
+        return current;
+    }
+
+    void TraversePreOrder(Node<T>* current, std::function<void(Node<T>*)> action) {
+        if(!current) {
+            return;
+        } else {
+            action(current);
+            TraversePreOrder(current->left, action);
+            TraversePreOrder(current->right, action);
+        }
+    }
+
+    void TraversePostOrder(Node<T>* current, std::function<void(Node<T>*)> action) {
+        if(!current) {
+            return;
+        } else {
+            TraversePostOrder(current->left, action);
+            TraversePostOrder(current->right, action);
+            action(current);
+        }
+    }
+
+    void TraverseInOrder(Node<T>* current, std::function<void(Node<T>*)> action) {
+        if(!current) {
+            return;
+        } else {
+            TraverseInOrder(current->left, action);
+            action(current);
+            TraverseInOrder(current->right, action);
+        }
     }
 };
 
-struct node_visiter{
 
-    node_visiter() = default;
-
-    int min = std::numeric_limits<int>::max();
-    int max = std::numeric_limits<int>::min();
-
-    double avg = 0;
-    int i = 0;
-
-    bool avl = true;
-
-
-//fucking monoids, they are everywhere
-    node_visiter operator+(const node_visiter &other) {
-        auto navg = 0.0;
-        if(this->i != 0 || other.i != 0){
-            navg = ((this->avg * this->i) + (other.avg * other.i)) / (this->i + other.i);
-        }
-
-        auto ret = (node_visiter) {
-            .min = std::min(this->min, other.min),
-            .max = std::max(this->max, other.max),
-            .avg = navg,
-            .i = this->i + other.i,
-            .avl = this->avl && other.avl
-        };
-        return ret;
-    }
-};
 
 #endif //UE2_AVLTREE_TREE_H
