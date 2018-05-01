@@ -35,91 +35,23 @@ public:
 template<typename T>
 class Tree {
 public:
-    Node<T> *root = nullptr;
-    size_t size{};
-
-    Tree() {
-        root = nullptr;
-        size = 0;
-    }
-
+    Tree();
     // if i delete the tree all Nodes go out of scope and call their destructor!
-    ~Tree() {
-        delete root;
-    }
-
-    void add(T val) {
-        root = addRecursive(root, val);
-    }
-
-    void printPreOrder() {
-        size_t j = size;
-        TraversePreOrder(root, [&j](Node<T> *current) mutable {
-            std::cout << current->value;
-            if (--j > 0) std::cout << "->";
-        });
-        std::cout << "\n";
-    }
-
-    void printPostOrder() {
-        size_t j = size;
-        TraversePostOrder(root, [&j](Node<T> *current) mutable {
-            std::cout << current->value;
-            if (--j > 0) std::cout << "->";
-        });
-        std::cout << "\n";
-    }
-
-    // closure with size of tree
-    void printInOrder() {
-        size_t j = size;
-        TraverseInOrder(root, [&j](Node<T> *current) mutable {
-            std::cout << current->value;
-            if (--j > 0) std::cout << "->";
-        });
-        std::cout << "\n";
-    }
+    ~Tree();
+    void add(T val);
+    void printPreOrder();
+    void printPostOrder();
+    void printInOrder();
 
 
 private:
-    Node<T> *addRecursive(Node<T> *current, int val) {
-        if (!current) {
-            return new Node<T>(val);
-        } else if (val > current->value) {
-            current->right = addRecursive(current->right, val);
-        } else if (val < current->value) {
-            current->left = addRecursive(current->left, val);
-        } else {
-            //value already exists
-            return current;
-        }
-        size++;
-        return current;
-    }
+    Node<T> *root = nullptr;
+    size_t size{};
 
-    void TraversePreOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-        if (current) {
-            action(current);
-            TraversePreOrder(current->left, action);
-            TraversePreOrder(current->right, action);
-        }
-    }
-
-    void TraversePostOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-        if (current) {
-            TraversePostOrder(current->left, action);
-            TraversePostOrder(current->right, action);
-            action(current);
-        }
-    }
-
-    void TraverseInOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-        if (current) {
-            TraverseInOrder(current->left, action);
-            action(current);
-            TraverseInOrder(current->right, action);
-        }
-    }
+    Node<T> *addRecursive(Node<T> *current, int val);
+    void TraversePreOrder(Node<T> *current, std::function<void(Node<T> *)> action);
+    void TraversePostOrder(Node<T> *current, std::function<void(Node<T> *)> action);
+    void TraverseInOrder(Node<T> *current, std::function<void(Node<T> *)> action);
 };
 
 

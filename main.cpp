@@ -1,7 +1,6 @@
 #include <iostream>
-#include <iomanip>
-#include "Tree.h"
 #include <sstream>
+#include "Tree.h"
 
 int main() {
     Tree<int> t{};
