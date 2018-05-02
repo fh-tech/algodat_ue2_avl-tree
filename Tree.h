@@ -11,12 +11,6 @@
 #include <limits>
 #include <iomanip>
 
-//lambda for printing
-template<typename T>
-auto print = [](Node<T>* current) {
-    std::cout << current->value << std::endl;
-};
-
 struct recursion_state {
     int min = std::numeric_limits<int>::max();
     int max = std::numeric_limits<int>::min();
@@ -36,15 +30,15 @@ public:
     void add(T val) {
         root = addRecursive(root, val);
     }
-    void printPreOrder() {
-        TraversePreOrder(root, print<T>);
-    }
-    void printPostOrder() {
-        TraversePostOrder(root, print<T>);
-    }
-    void printInOrder() {
-        TraverseInOrder(root, print<T>);
-    }
+//    void printPreOrder() {
+//        TraversePreOrder(root, print<T>);
+//    }
+//    void printPostOrder() {
+//        TraversePostOrder(root, print<T>);
+//    }
+//    void printInOrder() {
+//        TraverseInOrder(root, print<T>);
+//    }
     void printStats() {
         recursion_state stat_res = TraverseSpecial<recursion_state>(root, recursion_state{}, [](recursion_state rec_state, Node<T>* current) {
             int height_left = get_height(current->left);
@@ -80,12 +74,13 @@ private:
         } else if (val < current->value) {
             current->left = addRecursive(current->left, val);
         } else {
-//value already exists
+            //value already exists
             return current;
         }
         return current;
     }
 
+    // traverses like in pdf - reversed post order?
     template<typename J>
     J TraverseSpecial(Node<T> *current, J rec_state, std::function<J(J, Node<T> *)> action) {
         if(current) {
@@ -96,30 +91,31 @@ private:
         return rec_state;
     }
 
-    void TraversePreOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-        if (current) {
-            action(current);
-            TraversePreOrder(current->left, action);
-            TraversePreOrder(current->right, action);
-        }
-    }
+//    void TraversePreOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
+//        if (current) {
+//            action(current);
+//            TraversePreOrder(current->left, action);
+//            TraversePreOrder(current->right, action);
+//        }
+//    }
+//
+//    void TraversePostOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
+//        if (current) {
+//            TraversePostOrder(current->left, action);
+//            TraversePostOrder(current->right, action);
+//            action(current);
+//        }
+//    }
+//
+//    void TraverseInOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
+//        if (current) {
+//            TraverseInOrder(current->left, action);
+//            action(current);
+//            TraverseInOrder(current->right, action);
+//        }
+//    }
 
-    void TraversePostOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-        if (current) {
-            TraversePostOrder(current->left, action);
-            TraversePostOrder(current->right, action);
-            action(current);
-        }
-    }
-
-    void TraverseInOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-        if (current) {
-            TraverseInOrder(current->left, action);
-            action(current);
-            TraverseInOrder(current->right, action);
-        }
-    }
-
+    // static so i can call it in lambda
     static int get_height(Node<T>* node){
         if(!node) return 0;
         else{
@@ -129,21 +125,6 @@ private:
             );
         }
     }
-
-    static T getMin(Node<T>* current) {
-        if(current->left) {
-            getMin(current->left);
-        }
-        return current;
-    }
-
-    static T getMax(Node<T>* current) {
-        if(current->right) {
-            getMax(current->right);
-        }
-        return current;
-    }
-
 };
 
 
