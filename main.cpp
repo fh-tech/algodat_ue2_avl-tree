@@ -1,6 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include "Tree.h"
+#include "Node.h"
 
 int main() {
     Tree<int> t{};
@@ -12,6 +13,6 @@ int main() {
         ss >> val;
         t.add(val);
     }
-    t.printPreOrder();
+    t.printStats();
 }
 

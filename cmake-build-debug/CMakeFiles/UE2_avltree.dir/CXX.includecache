@@ -8,10 +8,6 @@
 
 /home/vik/Repos/ue2_avltree/Node.h
 
-/home/vik/Repos/ue2_avltree/Tree.cpp
-Tree.h
-/home/vik/Repos/ue2_avltree/Tree.h
-
 /home/vik/Repos/ue2_avltree/Tree.h
 functional
 -
@@ -19,6 +15,8 @@ iostream
 -
 Node.h
 /home/vik/Repos/ue2_avltree/Node.h
+pgtypes_numeric.h
+-
 
 /home/vik/Repos/ue2_avltree/main.cpp
 iostream
@@ -27,4 +25,6 @@ sstream
 -
 Tree.h
 /home/vik/Repos/ue2_avltree/Tree.h
+Node.h
+/home/vik/Repos/ue2_avltree/Node.h
 

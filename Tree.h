@@ -8,6 +8,8 @@
 #include <functional>
 #include <iostream>
 #include "Node.h"
+#include <limits>
+#include <iomanip>
 
 //lambda for printing
 template<typename T>
@@ -20,6 +22,7 @@ struct recursion_state {
     int max = std::numeric_limits<int>::min();
     int sum = 0;
     int count = 0;
+    bool avl = true;
 };
 
 template<typename T>
@@ -43,20 +46,31 @@ public:
         TraverseInOrder(root, print<T>);
     }
     void printStats() {
-        recursion_state rec_stat = TraverseSpecial<recursion_state>(root, recursion_state{}, [](recursion_state rec_state, Node<T>* current) {
+        recursion_state stat_res = TraverseSpecial<recursion_state>(root, recursion_state{}, [](recursion_state rec_state, Node<T>* current) {
+            int height_left = get_height(current->left);
+            int height_right = get_height(current->right);
+            int balance = height_left - height_right;
+            std::cout << "bal(" << current->value << ") = " << balance;
+            if(balance*balance >= 4) {
+                std::cout << " (AVL violation!)" << std::endl;
+                rec_state.avl = false;
+            } else {
+                std::cout << "\n";
+            }
             if(current->value > rec_state.max) rec_state.max = current->value;
             if(current->value < rec_state.min) rec_state.min = current->value;
             rec_state.sum += current->value;
             rec_state.count += 1;
+            return rec_state;
         });
-        double avg = rec_stat.sum / rec_stat.count;
-        std::cout << "min: " << rec_stat.min << ", max: " << rec_stat.max << ", avg: " << avg << std::endl;
+        double avg = (double)stat_res.sum / stat_res.count;
+        stat_res.avl ? std::cout << "AVL: yes" << std::endl : std::cout << "AVL: no" << std::endl;
+        std::cout << "min: " << stat_res.min << ", max: " << stat_res.max << ", avg: " << std::fixed << std::setprecision(2) << avg << std::endl;
     }
 
 
 private:
     Node<T> *root = nullptr;
-    size_t size{};
 
     Node<T> *addRecursive(Node<T> *current, int val) {
         if (!current) {
@@ -69,23 +83,9 @@ private:
 //value already exists
             return current;
         }
-        size++;
         return current;
     }
-    void TraversePreOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-        if (current) {
-            action(current);
-            TraversePreOrder(current->left, action);
-            TraversePreOrder(current->right, action);
-        }
-    }
-    void TraversePostOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-        if (current) {
-            TraversePostOrder(current->left, action);
-            TraversePostOrder(current->right, action);
-            action(current);
-        }
-    }
+
     template<typename J>
     J TraverseSpecial(Node<T> *current, J rec_state, std::function<J(J, Node<T> *)> action) {
         if(current) {
@@ -96,6 +96,22 @@ private:
         return rec_state;
     }
 
+    void TraversePreOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
+        if (current) {
+            action(current);
+            TraversePreOrder(current->left, action);
+            TraversePreOrder(current->right, action);
+        }
+    }
+
+    void TraversePostOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
+        if (current) {
+            TraversePostOrder(current->left, action);
+            TraversePostOrder(current->right, action);
+            action(current);
+        }
+    }
+
     void TraverseInOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
         if (current) {
             TraverseInOrder(current->left, action);
@@ -104,14 +120,24 @@ private:
         }
     }
 
-    T getMin(Node<T>* current) {
+    static int get_height(Node<T>* node){
+        if(!node) return 0;
+        else{
+            return 1 + std::max(
+                    get_height(node->left),
+                    get_height(node->right)
+            );
+        }
+    }
+
+    static T getMin(Node<T>* current) {
         if(current->left) {
             getMin(current->left);
         }
         return current;
     }
 
-    T getMax(Node<T>* current) {
+    static T getMax(Node<T>* current) {
         if(current->right) {
             getMax(current->right);
         }
