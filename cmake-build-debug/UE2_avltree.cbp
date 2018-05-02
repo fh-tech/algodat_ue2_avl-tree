@@ -85,9 +85,6 @@
 		<Unit filename="/home/vik/Repos/ue2_avltree/Node.h">
 			<Option target="UE2_avltree"/>
 		</Unit>
-		<Unit filename="/home/vik/Repos/ue2_avltree/Tree.cpp">
-			<Option target="UE2_avltree"/>
-		</Unit>
 		<Unit filename="/home/vik/Repos/ue2_avltree/Tree.h">
 			<Option target="UE2_avltree"/>
 		</Unit>

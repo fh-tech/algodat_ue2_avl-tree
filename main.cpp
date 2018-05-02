@@ -13,7 +13,5 @@ int main() {
         t.add(val);
     }
     t.printPreOrder();
-    t.printPostOrder();
-    t.printInOrder();
 }
 

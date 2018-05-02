@@ -1,5 +1,5 @@
 //
-// Created by vik on 29.04.18.
+// Created by vik on 02.05.18.
 //
 
 #ifndef UE2_AVLTREE_NODE_H
@@ -12,7 +12,7 @@ public:
     Node<T> *right = nullptr;
     T value{};
 
-    explicit Node(T value) {
+    Node(T value) {
         this->value = value;
     }
 
@@ -21,6 +21,5 @@ public:
         delete right;
     }
 };
-
 
 #endif //UE2_AVLTREE_NODE_H

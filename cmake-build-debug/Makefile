@@ -123,33 +123,6 @@ UE2_avltree/fast:
 	$(MAKE) -f CMakeFiles/UE2_avltree.dir/build.make CMakeFiles/UE2_avltree.dir/build
 .PHONY : UE2_avltree/fast
 
-Tree.o: Tree.cpp.o
-
-.PHONY : Tree.o
-
-# target to build an object file
-Tree.cpp.o:
-	$(MAKE) -f CMakeFiles/UE2_avltree.dir/build.make CMakeFiles/UE2_avltree.dir/Tree.cpp.o
-.PHONY : Tree.cpp.o
-
-Tree.i: Tree.cpp.i
-
-.PHONY : Tree.i
-
-# target to preprocess a source file
-Tree.cpp.i:
-	$(MAKE) -f CMakeFiles/UE2_avltree.dir/build.make CMakeFiles/UE2_avltree.dir/Tree.cpp.i
-.PHONY : Tree.cpp.i
-
-Tree.s: Tree.cpp.s
-
-.PHONY : Tree.s
-
-# target to generate assembly for a file
-Tree.cpp.s:
-	$(MAKE) -f CMakeFiles/UE2_avltree.dir/build.make CMakeFiles/UE2_avltree.dir/Tree.cpp.s
-.PHONY : Tree.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -186,9 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... UE2_avltree"
-	@echo "... Tree.o"
-	@echo "... Tree.i"
-	@echo "... Tree.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
