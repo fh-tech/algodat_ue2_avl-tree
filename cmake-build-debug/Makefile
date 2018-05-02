@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_generator
+
+# Build rule for target.
+test_generator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_generator
+.PHONY : test_generator
+
+# fast build rule for target.
+test_generator/fast:
+	$(MAKE) -f CMakeFiles/test_generator.dir/build.make CMakeFiles/test_generator.dir/build
+.PHONY : test_generator/fast
+
+#=============================================================================
 # Target rules for targets named UE2_avltree
 
 # Build rule for target.
@@ -150,6 +163,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/UE2_avltree.dir/build.make CMakeFiles/UE2_avltree.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test_generator/main.o: test_generator/main.cpp.o
+
+.PHONY : test_generator/main.o
+
+# target to build an object file
+test_generator/main.cpp.o:
+	$(MAKE) -f CMakeFiles/test_generator.dir/build.make CMakeFiles/test_generator.dir/test_generator/main.cpp.o
+.PHONY : test_generator/main.cpp.o
+
+test_generator/main.i: test_generator/main.cpp.i
+
+.PHONY : test_generator/main.i
+
+# target to preprocess a source file
+test_generator/main.cpp.i:
+	$(MAKE) -f CMakeFiles/test_generator.dir/build.make CMakeFiles/test_generator.dir/test_generator/main.cpp.i
+.PHONY : test_generator/main.cpp.i
+
+test_generator/main.s: test_generator/main.cpp.s
+
+.PHONY : test_generator/main.s
+
+# target to generate assembly for a file
+test_generator/main.cpp.s:
+	$(MAKE) -f CMakeFiles/test_generator.dir/build.make CMakeFiles/test_generator.dir/test_generator/main.cpp.s
+.PHONY : test_generator/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_generator"
 	@echo "... UE2_avltree"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test_generator/main.o"
+	@echo "... test_generator/main.i"
+	@echo "... test_generator/main.s"
 .PHONY : help
 
 

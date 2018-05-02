@@ -57,10 +57,12 @@ public:
             rec_state.count += 1;
             return rec_state;
         });
-        double avg = (double)stat_res.sum / stat_res.count;
-        stat_res.avl ? std::cout << "AVL: yes" << std::endl : std::cout << "AVL: no" << std::endl;
-        std::cout << "min: " << stat_res.min << ", max: " << stat_res.max << ", avg: " << std::fixed << std::setprecision(2) << avg << std::endl;
-    }
+            double avg = stat_res.count > 0 ? (double)stat_res.sum / stat_res.count : 0;
+            stat_res.avl ? std::cout << "AVL: yes" << std::endl : std::cout << "AVL: no" << std::endl;
+            std::cout << "min: " << (stat_res.count > 0 ? stat_res.min : 0) << ", max: " << (stat_res.count > 0 ? stat_res.max : 0) << ", avg: " << std::fixed << std::setprecision(2) << avg << std::endl;
+
+
+        }
 
 
 private:
