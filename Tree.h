@@ -53,7 +53,6 @@ public:
             stat_res.avl ? std::cout << "AVL: yes" << std::endl : std::cout << "AVL: no" << std::endl;
             std::cout << "min: " << (stat_res.count > 0 ? stat_res.min : 0) << ", max: " << (stat_res.count > 0 ? stat_res.max : 0) << ", avg: " << std::fixed << std::setprecision(2) << avg << std::endl;
 
-
         }
 
 

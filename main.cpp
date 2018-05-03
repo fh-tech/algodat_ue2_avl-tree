@@ -13,7 +13,6 @@ int main() {
         ss >> val;
         t.add(val);
     }
-    std::cout << "test" << std::endl;
     t.printStats();
 }
 
