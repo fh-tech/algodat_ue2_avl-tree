@@ -14,7 +14,7 @@
 struct recursion_state {
     int min = std::numeric_limits<int>::max();
     int max = std::numeric_limits<int>::min();
-    int sum = 0;
+    long long sum = 0;
     int count = 0;
     bool avl = true;
 };
