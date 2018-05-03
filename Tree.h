@@ -7,9 +7,9 @@
 
 #include <functional>
 #include <iostream>
-#include "Node.h"
 #include <limits>
 #include <iomanip>
+#include "Node.h"
 
 struct recursion_state {
     int min = std::numeric_limits<int>::max();
@@ -30,15 +30,7 @@ public:
     void add(T val) {
         root = addRecursive(root, val);
     }
-//    void printPreOrder() {
-//        TraversePreOrder(root, print<T>);
-//    }
-//    void printPostOrder() {
-//        TraversePostOrder(root, print<T>);
-//    }
-//    void printInOrder() {
-//        TraverseInOrder(root, print<T>);
-//    }
+
     void printStats() {
         recursion_state stat_res = TraverseSpecial<recursion_state>(root, recursion_state{}, [](recursion_state rec_state, Node<T>* current) {
             int height_left = get_height(current->left);
@@ -92,30 +84,6 @@ private:
         }
         return rec_state;
     }
-
-//    void TraversePreOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-//        if (current) {
-//            action(current);
-//            TraversePreOrder(current->left, action);
-//            TraversePreOrder(current->right, action);
-//        }
-//    }
-//
-//    void TraversePostOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-//        if (current) {
-//            TraversePostOrder(current->left, action);
-//            TraversePostOrder(current->right, action);
-//            action(current);
-//        }
-//    }
-//
-//    void TraverseInOrder(Node<T> *current, std::function<void(Node<T> *)> action) {
-//        if (current) {
-//            TraverseInOrder(current->left, action);
-//            action(current);
-//            TraverseInOrder(current->right, action);
-//        }
-//    }
 
     // static so i can call it in lambda
     static int get_height(Node<T>* node){
