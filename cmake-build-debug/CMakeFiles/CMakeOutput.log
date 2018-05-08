@@ -1,4 +1,4 @@
-The system is: Linux - 4.14.29-1-MANJARO - x86_64
+The system is: Linux - 4.14.34-1-MANJARO - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8deb3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8deb3.dir/build.make CMakeFiles/cmTC_8deb3.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8deb3.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_8deb3.dir/testCCompiler.c.o   -c /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_8deb3
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8deb3.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_8deb3.dir/testCCompiler.c.o  -o cmTC_8deb3 
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_0123c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0123c.dir/build.make CMakeFiles/cmTC_0123c.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0123c.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0123c.dir/testCCompiler.c.o   -c /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_0123c
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0123c.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_0123c.dir/testCCompiler.c.o  -o cmTC_0123c 
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cdf85/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cdf85.dir/build.make CMakeFiles/cmTC_cdf85.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cdf85.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_cdf85.dir/CMakeCCompilerABI.c.o   -c /opt/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_cdf85
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdf85.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_cdf85.dir/CMakeCCompilerABI.c.o  -o cmTC_cdf85 
+Run Build Command:"/usr/bin/make" "cmTC_f9671/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f9671.dir/build.make CMakeFiles/cmTC_f9671.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9671.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f9671.dir/CMakeCCompilerABI.c.o   -c /opt/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_f9671
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9671.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_f9671.dir/CMakeCCompilerABI.c.o  -o cmTC_f9671 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper
@@ -59,24 +59,24 @@ Thread model: posix
 gcc version 7.3.1 20180312 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cdf85' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZqcOmE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_cdf85 /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../.. CMakeFiles/cmTC_cdf85.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cdf85' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9671' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSeWb3S.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f9671 /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../.. CMakeFiles/cmTC_f9671.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9671' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_cdf85/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_cdf85.dir/build.make CMakeFiles/cmTC_cdf85.dir/build]
-  ignore line: [make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_cdf85.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_cdf85.dir/CMakeCCompilerABI.c.o   -c /opt/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_cdf85]
-  ignore line: [/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdf85.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_cdf85.dir/CMakeCCompilerABI.c.o  -o cmTC_cdf85 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f9671/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f9671.dir/build.make CMakeFiles/cmTC_f9671.dir/build]
+  ignore line: [make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_f9671.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_f9671.dir/CMakeCCompilerABI.c.o   -c /opt/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_f9671]
+  ignore line: [/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9671.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_f9671.dir/CMakeCCompilerABI.c.o  -o cmTC_f9671 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.3.1 20180312 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cdf85' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZqcOmE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_cdf85 /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../.. CMakeFiles/cmTC_cdf85.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9671' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSeWb3S.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f9671 /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../.. CMakeFiles/cmTC_f9671.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccZqcOmE.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccSeWb3S.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -107,7 +107,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_cdf85] ==> ignore
+    arg [cmTC_f9671] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtbeginS.o] ==> ignore
@@ -116,7 +116,7 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../..]
-    arg [CMakeFiles/cmTC_cdf85.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_f9671.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -141,17 +141,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_771b4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_771b4.dir/build.make CMakeFiles/cmTC_771b4.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_771b4.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_771b4.dir/feature_tests.c.o   -c /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_771b4
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_771b4.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_771b4.dir/feature_tests.c.o  -o cmTC_771b4 
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_288a5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_288a5.dir/build.make CMakeFiles/cmTC_288a5.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_288a5.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_288a5.dir/feature_tests.c.o   -c /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_288a5
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_288a5.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_288a5.dir/feature_tests.c.o  -o cmTC_288a5 
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -161,17 +161,17 @@ make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeF
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_016ce/fast"
-/usr/bin/make -f CMakeFiles/cmTC_016ce.dir/build.make CMakeFiles/cmTC_016ce.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_016ce.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_016ce.dir/feature_tests.c.o   -c /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_016ce
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_016ce.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_016ce.dir/feature_tests.c.o  -o cmTC_016ce 
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_8bcc4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8bcc4.dir/build.make CMakeFiles/cmTC_8bcc4.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8bcc4.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_8bcc4.dir/feature_tests.c.o   -c /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8bcc4
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bcc4.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_8bcc4.dir/feature_tests.c.o  -o cmTC_8bcc4 
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -181,17 +181,17 @@ make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeF
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_30165/fast"
-/usr/bin/make -f CMakeFiles/cmTC_30165.dir/build.make CMakeFiles/cmTC_30165.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_30165.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_30165.dir/feature_tests.c.o   -c /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_30165
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30165.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_30165.dir/feature_tests.c.o  -o cmTC_30165 
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_2e0a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2e0a2.dir/build.make CMakeFiles/cmTC_2e0a2.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2e0a2.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_2e0a2.dir/feature_tests.c.o   -c /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2e0a2
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e0a2.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_2e0a2.dir/feature_tests.c.o  -o cmTC_2e0a2 
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -199,30 +199,30 @@ make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeF
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_74de5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_74de5.dir/build.make CMakeFiles/cmTC_74de5.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_74de5.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_74de5.dir/testCXXCompiler.cxx.o -c /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_74de5
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74de5.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_74de5.dir/testCXXCompiler.cxx.o  -o cmTC_74de5 
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_7a59e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7a59e.dir/build.make CMakeFiles/cmTC_7a59e.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7a59e.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_7a59e.dir/testCXXCompiler.cxx.o -c /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_7a59e
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a59e.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_7a59e.dir/testCXXCompiler.cxx.o  -o cmTC_7a59e 
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2ef7a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2ef7a.dir/build.make CMakeFiles/cmTC_2ef7a.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2ef7a.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_2ef7a.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_2ef7a
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ef7a.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_2ef7a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2ef7a 
+Run Build Command:"/usr/bin/make" "cmTC_f1bc2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1bc2.dir/build.make CMakeFiles/cmTC_f1bc2.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f1bc2.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_f1bc2.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_f1bc2
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1bc2.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_f1bc2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f1bc2 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper
@@ -232,24 +232,24 @@ Thread model: posix
 gcc version 7.3.1 20180312 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2ef7a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8w2l9Y.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2ef7a /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../.. CMakeFiles/cmTC_2ef7a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2ef7a' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f1bc2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoXm6jj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f1bc2 /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../.. CMakeFiles/cmTC_f1bc2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f1bc2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_2ef7a/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_2ef7a.dir/build.make CMakeFiles/cmTC_2ef7a.dir/build]
-  ignore line: [make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_2ef7a.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_2ef7a.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_2ef7a]
-  ignore line: [/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ef7a.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_2ef7a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2ef7a ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f1bc2/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f1bc2.dir/build.make CMakeFiles/cmTC_f1bc2.dir/build]
+  ignore line: [make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_f1bc2.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_f1bc2.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_f1bc2]
+  ignore line: [/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1bc2.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_f1bc2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f1bc2 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper]
@@ -259,13 +259,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.3.1 20180312 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2ef7a' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8w2l9Y.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2ef7a /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../.. CMakeFiles/cmTC_2ef7a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f1bc2' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoXm6jj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f1bc2 /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../.. CMakeFiles/cmTC_f1bc2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc8w2l9Y.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccoXm6jj.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -280,7 +280,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_2ef7a] ==> ignore
+    arg [cmTC_f1bc2] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/crtbeginS.o] ==> ignore
@@ -289,7 +289,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.1/../../..]
-    arg [CMakeFiles/cmTC_2ef7a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_f1bc2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -312,17 +312,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7d9dd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7d9dd.dir/build.make CMakeFiles/cmTC_7d9dd.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7d9dd.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_7d9dd.dir/feature_tests.cxx.o -c /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_7d9dd
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d9dd.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_7d9dd.dir/feature_tests.cxx.o  -o cmTC_7d9dd 
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_6ffd6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6ffd6.dir/build.make CMakeFiles/cmTC_6ffd6.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6ffd6.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_6ffd6.dir/feature_tests.cxx.o -c /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6ffd6
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ffd6.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_6ffd6.dir/feature_tests.cxx.o  -o cmTC_6ffd6 
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -385,17 +385,17 @@ make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeF
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4fc84/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4fc84.dir/build.make CMakeFiles/cmTC_4fc84.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4fc84.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_4fc84.dir/feature_tests.cxx.o -c /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_4fc84
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fc84.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_4fc84.dir/feature_tests.cxx.o  -o cmTC_4fc84 
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_81dc6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_81dc6.dir/build.make CMakeFiles/cmTC_81dc6.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_81dc6.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_81dc6.dir/feature_tests.cxx.o -c /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_81dc6
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81dc6.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_81dc6.dir/feature_tests.cxx.o  -o cmTC_81dc6 
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -458,17 +458,17 @@ make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeF
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_29b93/fast"
-/usr/bin/make -f CMakeFiles/cmTC_29b93.dir/build.make CMakeFiles/cmTC_29b93.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_29b93.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_29b93.dir/feature_tests.cxx.o -c /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_29b93
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29b93.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_29b93.dir/feature_tests.cxx.o  -o cmTC_29b93 
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fb62b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fb62b.dir/build.make CMakeFiles/cmTC_fb62b.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fb62b.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_fb62b.dir/feature_tests.cxx.o -c /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_fb62b
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb62b.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_fb62b.dir/feature_tests.cxx.o  -o cmTC_fb62b 
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -531,17 +531,17 @@ make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeF
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fed4e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fed4e.dir/build.make CMakeFiles/cmTC_fed4e.dir/build
-make[1]: Entering directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fed4e.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_fed4e.dir/feature_tests.cxx.o -c /home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_fed4e
-/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fed4e.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_fed4e.dir/feature_tests.cxx.o  -o cmTC_fed4e 
-make[1]: Leaving directory '/home/vik/Repos/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b5f2f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b5f2f.dir/build.make CMakeFiles/cmTC_b5f2f.dir/build
+make[1]: Entering directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b5f2f.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_b5f2f.dir/feature_tests.cxx.o -c /home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b5f2f
+/opt/clion/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5f2f.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_b5f2f.dir/feature_tests.cxx.o  -o cmTC_b5f2f 
+make[1]: Leaving directory '/home/vik/Repos/avl_tree/ue2_avltree/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
